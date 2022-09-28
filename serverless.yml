@@ -27,7 +27,7 @@ functions:
   index:
     handler: src/functions/index.handler
     layers:
-      - !Ref TestLambdaLayer
+      - { Ref: TestLambdaLayer }
     events:
       - httpApi:
           path: /
