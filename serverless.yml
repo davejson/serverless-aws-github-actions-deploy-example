@@ -19,9 +19,15 @@ custom:
     prod: WARN
     default: DEBUG
 
+layers:
+  test:
+    path: logging
+
 functions:
   index:
     handler: src/functions/index.handler
+    layers:
+      - !Ref TestLambdaLayer
     events:
       - httpApi:
           path: /
