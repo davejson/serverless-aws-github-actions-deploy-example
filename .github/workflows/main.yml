@@ -9,7 +9,7 @@ on:
       - master
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: us-west-2
   AWS_STAGE_CI_TEST: ci-test
   AWS_STAGE_STAGING: staging
   NODE_VERSION: "12"
